@@ -4,6 +4,9 @@
 .flex{
         display: flex;
 }
+.flex_col{
+        flex-direction: column;
+}
 .flex_center {
         justify-content: center;
         align-items    : center;

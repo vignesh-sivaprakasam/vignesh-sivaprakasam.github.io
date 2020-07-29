@@ -22,18 +22,35 @@
         background : #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
         color: white;
 }
+.intro_content{
+        transform: translate(0px, -25%);
+        align-items: center;
+}
 .intro_content > * {
         text-align: center;
 }
 .intro_title{
         font-family   : poppins-bold, sans-serif;
         color         : #cc005f;
-        font-size     : 2.3rem;
+        font-size     : 1.4rem;
+        letter-spacing: 0.2rem;
         text-transform: uppercase;
 }
 .intro_name {
-        font-size: 6rem;
+        font-size: 5rem;
 }
 .intro_description {
         font-size     : 1.3rem;
+        opacity : 0.7;
+}
+.button{
+        color          : white;
+        text-decoration: none;
+        padding        : 1rem;
+        letter-spacing : 0.25rem;
+        border         : 3px solid #0f0f0f;
+        margin-top     : 3rem;
+}
+.button:hover{
+        border         : 3px solid #cc005f;
 }
