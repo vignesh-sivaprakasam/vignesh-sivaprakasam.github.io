@@ -1,0 +1,39 @@
+.container{
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+                "nav    nav     nav     nav     nav     nav     nav     nav     nav     nav     nav     nav"
+                "intro  intro   intro   intro   intro   intro   intro   intro   intro   intro   intro   intro"
+}
+
+.nav {
+        grid-area: nav;
+        width: 100%;
+        color: white;
+}
+.nav > * {
+        padding: 10px;
+        padding-top: 15px;
+        margin: 5px;
+}
+.intro {
+        grid-area: intro;
+        height: 100vh;
+        background : #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+        color: white;
+}
+.intro_content > * {
+        text-align: center;
+}
+.intro_title{
+        font-family   : poppins-bold, sans-serif;
+        color         : #cc005f;
+        font-size     : 2.3rem;
+        text-transform: uppercase;
+}
+.intro_name {
+        font-size: 6rem;
+}
+.intro_description {
+        font-size     : 1.3rem;
+}

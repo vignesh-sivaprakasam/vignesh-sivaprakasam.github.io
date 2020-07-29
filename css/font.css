@@ -1,0 +1,28 @@
+@font-face {
+        font-family: 'brandon_grotesqueblack';
+        src: url('../fonts/brandon-grotesque-black-58a8a3e824392.woff2') format('woff2'),
+                url('brandon-grotesque-black-58a8a3e824392.woff') format('woff');
+        font-weight: 100;
+        font-style: normal;
+}
+
+@font-face {
+        font-family: 'Lato Bold';
+        src:url('../fonts/Lato-Bold.ttf') format("truetype"),
+                url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+                url('../fonts/lato-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+        font-family: 'Lato Light';
+        src: url('../fonts/Lato-Light.ttf') format("truetype"),
+                url('../fonts/lato-light-webfont.woff2') format('woff2'),
+                url('../fonts/lato-light-webfont.woff') format('woff');
+}
+
+@font-face {
+        font-family: 'Lato';
+        src: url('../fonts/Lato-Regular.ttf') format("truetype"),
+                url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+                url('../fonts/lato-regular-webfont.woff') format('woff');
+}

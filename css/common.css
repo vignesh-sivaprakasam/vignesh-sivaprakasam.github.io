@@ -1,0 +1,22 @@
+.grid{
+        display: grid;
+}
+.flex{
+        display: flex;
+}
+.flex_center {
+        justify-content: center;
+        align-items    : center;
+}
+.jus_end{
+        justify-content: flex-end;
+}
+.pos_fixed {
+        position: fixed;
+}
+
+@media (max-width:767px){
+        html {
+                font-size: 10px;
+        }
+}
