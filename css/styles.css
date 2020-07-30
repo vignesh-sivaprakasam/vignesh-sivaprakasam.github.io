@@ -7,6 +7,7 @@
         grid-template-areas: 
                 "nav    nav     nav     nav     nav     nav     nav     nav     nav     nav     nav     nav"
                 "intro  intro   intro   intro   intro   intro   intro   intro   intro   intro   intro   intro"
+                "about  about   about   about   about   about   about   about   about   about   about   about"
                 "footer footer  footer  footer  footer  footer  footer  footer  footer  footer  footer  footer"
 }
 
@@ -43,8 +44,8 @@
         font-size: 5rem;
 }
 .intro_description {
-        font-size     : 1.3rem;
-        opacity : 0.7;
+        font-size : 1.3rem;
+        opacity   : 0.7;
 }
 .button{
         color          : white;
@@ -62,6 +63,46 @@
         padding: 5rem;
         font-size: 2.5rem;
 }
+
+.about{
+        grid-area: about;
+        height   : 35vh;
+}
+.about h5{
+        font-size: 2rem;
+        color: var(--primary-color);
+}
+.about_sub_grid{
+        height               : 100%;
+        align-content        : center;
+        grid-column-gap      : 50px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows   : auto;
+        grid-template-areas  :
+                "p_image p_image p_image p_image  p_image p_image p_body p_body p_body p_body p_body p_body"
+}
+
+.profile_image{
+        grid-area   : p_image;
+        justify-self: flex-end;
+}
+.profile_body{
+        grid-area: p_body;
+        align-self: center;
+}
+.profile_body p {
+        color:#838383;
+        font-size : 1.3rem;
+}
+
+
+
+
+
+
+
+
+
 .footer .social{
         padding: 1rem;
         font-size: 1.7rem;
@@ -93,10 +134,15 @@
         background: #151515;
         grid-area            : footer;
         height: 30vh;
+        align-content: space-around;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows   : auto;
         grid-template-areas  :
                 "location location location name name name name name name social social social" 
+}
+
+.footer > * {
+        padding: 1.5rem;
 }
 
 .footer > .location {
@@ -104,7 +150,7 @@
 }
 .footer > .name {
         grid-area  : name;
-        margin     : auto;
+        /* margin     : auto; */
         /* transform  : translate(0px, -30px); */
         font-size  : 4rem;
         text-align: center;
@@ -133,5 +179,18 @@
                         "location location location location"
                         "name name name name" 
                         "social social social social"
+        }
+        .footer > * {
+                padding: 0;
+        }
+        .about_sub_grid{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows   : auto;
+                grid-template-areas  :
+                        "p_image p_image p_image p_image"
+                        "p_body p_body p_body p_body"
+        }
+        .profile_image{
+                justify-self: center;
         }
 }
