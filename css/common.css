@@ -20,6 +20,9 @@
 .pos_fixed {
         position: fixed;
 }
+.text_center{
+        text-align: center;
+}
 
 @media (max-width:767px){
         html {

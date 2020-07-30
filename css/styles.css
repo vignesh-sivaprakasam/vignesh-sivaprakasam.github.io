@@ -7,6 +7,7 @@
         grid-template-areas: 
                 "nav    nav     nav     nav     nav     nav     nav     nav     nav     nav     nav     nav"
                 "intro  intro   intro   intro   intro   intro   intro   intro   intro   intro   intro   intro"
+                "footer footer  footer  footer  footer  footer  footer  footer  footer  footer  footer  footer"
 }
 
 .nav {
@@ -56,22 +57,81 @@
 .button:hover{
         border         : 3px solid #cc005f;
 }
-.intro_social{
+
+.intro > .social{
+        padding: 5rem;
+        font-size: 2.5rem;
+}
+.footer .social{
+        padding: 1rem;
+        font-size: 1.7rem;
+}
+.footer .social > * {
+        margin: 0 1rem;
+}
+.social{
         /* display: block; */
         justify-content: center;
-        padding: 5rem;
 }
-.intro_social > * {
+.social > * {
         cursor   : pointer;
         display  : block;
-        font-size: 2.5rem;
         margin   : 0 3rem;
         color    : white;
 
 }
-.intro_social > *:hover{
+.social > *:hover{
         color:var(--primary-color);
 }
-.intro_social a {
+.social a {
         color:inherit;
+}
+
+.footer{
+        justify-items: center;
+        color: white;
+        background: #151515;
+        grid-area            : footer;
+        height: 30vh;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows   : auto;
+        grid-template-areas  :
+                "location location location name name name name name name social social social" 
+}
+
+.footer > .location {
+        grid-area: location;
+}
+.footer > .name {
+        grid-area  : name;
+        margin     : auto;
+        /* transform  : translate(0px, -30px); */
+        font-size  : 4rem;
+        text-align: center;
+        font-family: Sacramento,cursive;
+}
+.footer > .contact {
+        grid-area: social;
+}
+.footer_mail {
+        opacity    : 0.3;
+        font-family: auto;
+        font-size  : 1rem;
+}
+.footer h5 {
+        color: var(--primary-color);
+}
+.map_marker{
+        font-size: 1.7rem;
+}
+
+@media (max-width: 767px){
+        .footer {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows   : auto;
+                grid-template-areas  :
+                        "location location location location"
+                        "name name name name" 
+                        "social social social social"
+        }
 }
