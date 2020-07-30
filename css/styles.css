@@ -155,6 +155,7 @@ a.button::after{
 }
 .resume_content{
         grid-area: r_content;
+        font-size: 1.3rem;
         /* padding: 1rem; */
 }
 .resume_company{
@@ -343,4 +344,49 @@ a.button::after{
         .profile_image{
                 justify-self: center;
         }
+
+        .resume_subgrid{
+                grid-gap: 5px;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows   : auto;
+                grid-template-areas  :
+                        "r_title r_title r_title r_title" 
+                        "r_icon r_icon r_icon r_icon"
+                        "r_content r_content r_content r_content"
+        }
+
+        .resume_title{
+                justify-self: center;
+                font-size: 1.5rem;
+        }
+        .resume_company{
+                display: inline-block;
+                margin : 0 auto;
+        }
+        .resume_content{
+                font-size: 1.3rem;
+        }
+
+        .project_subgrid{
+                grid-gap: 5px;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows   : auto;
+                grid-template-areas  :
+                        "p_title p_title p_title p_title" 
+                        "p_icon p_icon p_icon p_icon"
+                        "p_content p_content p_content p_content"
+        }
+
+        .project_title{
+                justify-self: center;
+                font-size: 1.5rem;
+        }
+        .project_company{
+                display: inline-block;
+                margin : 0 auto;
+        }
+        .project_content{
+                font-size: 1.3rem;
+        }
+
 }
