@@ -8,6 +8,8 @@
                 "nav    nav     nav     nav     nav     nav     nav     nav     nav     nav     nav     nav"
                 "intro  intro   intro   intro   intro   intro   intro   intro   intro   intro   intro   intro"
                 "about  about   about   about   about   about   about   about   about   about   about   about"
+                "resume resume  resume  resume  resume  resume  resume  resume  resume  resume  resume  resume"
+                "project project  project  project  project  project  project  project  project  project  project  project"                
                 "footer footer  footer  footer  footer  footer  footer  footer  footer  footer  footer  footer"
 }
 
@@ -115,11 +117,134 @@ a.button::after{
         font-size : 1.3rem;
 }
 
+.resume{
+        background-color: #ebebeb;
+        grid-area: resume;
+}
+.resume > h5{
+        font-size : 2rem;
+        padding : 1.5rem;
+        color: var(--primary-color);
+}
+.content_container > *{
+        padding: 1rem;
+}
+.resume_subgrid{
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "r_title r_title r_title r_title r_icon r_content r_content r_content r_content r_content r_content r_content"
+}
+.resume_title{
+        grid-area: r_title;
+        justify-self: flex-end;
+}
+.resume_title > p {
+        color : #888888;
+}
+.resume_icon{
+        grid-area    : r_icon;
+        justify-self : center;
+        background   : #313131;
+        align-self   : flex-start;
+        padding      : 0.7rem;
+        border-radius: 50%;
+}
+.resume_icon > * {
+        color:white;
+}
+.resume_content{
+        grid-area: r_content;
+        /* padding: 1rem; */
+}
+.resume_company{
+        position      : relative;
+        padding-bottom: 1rem;
+}
+.resume_company::after{
+        content   :'';
+        display   : block;
+        height    : 3px;
+        width     : 50px;
+        background: rgba(0, 0, 0, 0.2);
+        position  : absolute;
+        left      : 0;
+        bottom    : 0;
+}
+.resume_content > .content{
+        font-family: poppins-regular, sans-serif;
+        font-weight: 200;
+        margin-top: 2rem;
+        color: #6e6e6e;
+}
+.content > * {
+        padding-bottom: 1rem;
+}
 
 
+.project{
+        grid-area: project;
+        background-color: #ebebeb;
+}
+.project > h5 {
+        font-size: 2rem;
+        padding  : 1.5rem;
+        color    : var(--primary-color);
+}
 
-
-
+.project_subgrid{
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "p_title p_title p_title p_title p_icon p_content p_content p_content p_content p_content p_content p_content"
+}
+.project_title{
+        grid-area: p_title;
+        justify-self: flex-end;
+}
+.project_title > p {
+        color : #888888;
+}
+.project_icon{
+        grid-area    : p_icon;
+        justify-self : center;
+        background   : #313131;
+        align-self   : flex-start;
+        padding      : 0.7rem;
+        border-radius: 50%;
+}
+.project_icon > * {
+        color:white;
+}
+.project_content{
+        grid-area: p_content;
+}
+.project_content > .content{
+        font-family: poppins-regular, sans-serif;
+        font-weight: 200;
+        margin-top: 2rem;
+        color: #6e6e6e;
+}
+.project_company{
+        position      : relative;
+        padding-bottom: 1rem;
+}
+.project_company::after{
+        content   :'';
+        display   : block;
+        height    : 3px;
+        width     : 50px;
+        background: rgba(0, 0, 0, 0.2);
+        position  : absolute;
+        left      : 0;
+        bottom    : 0;
+}
+.project_content > .content{
+        font-family: poppins-regular, sans-serif;
+        font-weight: 200;
+        margin-top: 2rem;
+        color: #6e6e6e;
+}
 
 
 
@@ -190,6 +315,11 @@ a.button::after{
 .map_marker{
         font-size: 1.7rem;
 }
+
+
+
+
+
 
 @media (max-width: 767px){
         .footer {
