@@ -80,6 +80,9 @@
         font-size: 2.5rem;
 }
 
+.about, .resume, .project {
+        padding: 0.6rem;
+}
 .about{
         grid-area: about;
         height   : 35vh;
@@ -155,7 +158,7 @@ a.button::after{
 }
 .resume_content{
         grid-area: r_content;
-        font-size: 1.3rem;
+        /* font-size: 1.3rem; */
         /* padding: 1rem; */
 }
 .resume_company{
@@ -357,14 +360,14 @@ a.button::after{
 
         .resume_title{
                 justify-self: center;
-                font-size: 1.5rem;
+                font-size: 1.7rem;
         }
         .resume_company{
                 display: inline-block;
                 margin : 0 auto;
         }
         .resume_content{
-                font-size: 1.3rem;
+                font-size: 1.5rem;
         }
 
         .project_subgrid{
@@ -385,8 +388,17 @@ a.button::after{
                 display: inline-block;
                 margin : 0 auto;
         }
-        .project_content{
-                font-size: 1.3rem;
+
+        .about h5, .resume h5, .project h5{
+                font-size: 3rem;
+        }
+
+        .resume_content, .project_content{
+                font-size: 1.5rem;
+        }
+
+        .profile_body p {
+
         }
 
 }
