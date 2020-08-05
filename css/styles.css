@@ -85,7 +85,7 @@
 }
 .about{
         grid-area: about;
-        height   : 35vh;
+        /* height   : 35vh; */
 }
 .about h5{
         font-size: 2rem;
@@ -104,7 +104,7 @@ a.button::after{
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows   : auto;
         grid-template-areas  :
-                "p_image p_image p_image p_image  p_image p_image p_body p_body p_body p_body p_body p_body"
+                "p_image p_image p_image p_image p_body p_body p_body p_body p_body p_body p_body p_body"
 }
 
 .profile_image{
@@ -282,7 +282,7 @@ a.button::after{
         color: white;
         background: #151515;
         grid-area            : footer;
-        height: 30vh;
+        /* height: 30vh; */
         align-content: space-around;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows   : auto;
@@ -320,9 +320,18 @@ a.button::after{
         font-size: 1.7rem;
 }
 
+.resume_download{
+        text-decoration: none;
+        padding        : 1rem;
+        letter-spacing : 0.2rem;
+        margin: 1rem;
+        border         : 3px solid #0f0f0f;
+        color: var(--primary-color);
+}
 
-
-
+.resume_download:hover{
+        border         : 3px solid #cc005f;
+}
 
 
 @media (max-width: 767px){
